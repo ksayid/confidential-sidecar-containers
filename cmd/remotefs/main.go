@@ -43,7 +43,7 @@ type AzureFilesystem struct {
 	KeyBlob skr.KeyBlob `json:"key,omitempty"`
 	// This is a testing key hexstring encoded to be used against the filesystem. This should
 	// be used only for testing.
-	RawKeyHexString string `json:"raw_key, omitempty"`
+	RawKeyHexString string `json:"raw_key,omitempty"`
 }
 
 func usage() {
