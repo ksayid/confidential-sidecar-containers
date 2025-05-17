@@ -64,7 +64,7 @@ func GenerateMAAHostData(inputBytes []byte) [HOST_DATA_SIZE]byte {
 		panic(fmt.Errorf("Length of sha256 hash should be %d bytes, but it is actually %d bytes", sha256len, len(inittimeDataBytes)))
 	}
 	if sha256len > HOST_DATA_SIZE {
-		panic(fmt.Errorf("Generated hash is too large for host data. hash length: %d bytes, report host size: %d", sha256len, REPORT_DATA_SIZE))
+		panic(fmt.Errorf("Generated hash is too large for host data. hash length: %d bytes, host data size: %d", sha256len, HOST_DATA_SIZE))
 	}
 	copy(hostData[:], inittimeDataBytes)
 	return hostData
