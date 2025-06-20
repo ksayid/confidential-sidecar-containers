@@ -1,12 +1,15 @@
 # Confidential Sidecar Containers
 
+[![Build Status](https://github.com/microsoft/confidential-sidecar-containers/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/microsoft/confidential-sidecar-containers/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
+[![Go Version](https://img.shields.io/badge/go-1.24%2B-brightgreen.svg)](https://golang.org/)
+[![Latest Release](https://img.shields.io/github/v/release/microsoft/confidential-sidecar-containers?include_prereleases&sort=semver)](https://github.com/microsoft/confidential-sidecar-containers/releases)
+
 This repository contains the code needed to build the sidecar containers used for [confidential containers](https://techcommunity.microsoft.com/t5/azure-confidential-computing/microsoft-introduces-preview-of-confidential-containers-on-azure/ba-p/3410394).
 
 The code in this repository should be located at ``$GOPATH/src/microsoft/confidential-sidecar-containers``.
 
 ## Testing
-
-[![CI](https://github.com/microsoft/confidential-sidecar-containers/actions/workflows/ci.yml/badge.svg?branch=main&event=schedule)](https://github.com/microsoft/confidential-sidecar-containers/actions/workflows/ci.yml)
 
 Each sidecar is tested under `./tests/<sidecar_name>`.
 Each directory is tested with the latest [confidential-aci-testing](https://github.com/microsoft/confidential-aci-testing) and therefore contains:
